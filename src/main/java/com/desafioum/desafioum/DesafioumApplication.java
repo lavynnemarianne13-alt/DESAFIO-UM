@@ -35,7 +35,7 @@ public class DesafioumApplication implements CommandLineRunner {
 		Order order = new Order(code,basic,discount);
 
 		System.out.println("Pedido codigo : " + order.getCode());
-		System.out.printf("Valor total: %.2f", orderService.total(order));
+		System.out.printf("Valor total: R$%.2f", orderService.total(order));
 
 		sc.close();
 
